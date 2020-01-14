@@ -1,8 +1,6 @@
 @import "./utils/_variables";
 
-.appbar {
-  width: 100%;
-  display: inline-block;
+.appbar {  
   background-color: $primary-color;
 }
 .nav-items {
@@ -59,7 +57,7 @@
   }
 
   .dropdown-item:hover {
-    background-color: #00cdcd;
+    background-color: $primary-color;
     color: #ffffff;
   }
 
@@ -72,4 +70,48 @@
   .dropdown-button:hover {
     border-bottom: 2px solid transparent;
   }
+}
+.contain{
+  padding: 0 80px;
+  width: calc(100% - 160px);
+  display: inline-block;
+}
+.content-toggle{
+  width: 33%;
+  height: 270px;
+  margin: 0 10px;
+  background-color: $primary-color;
+  padding: 40px;
+  position: relative;
+  .round{
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    background-color: #ffffff;
+    position: absolute;
+    left:50%;
+    transform: translate(-50%);
+    box-sizing: border-box;
+
+    .fas{
+      font-size: 50px;
+      color: $primary-color;
+    }
+  }
+}
+.content-toggle:hover{
+  border-bottom: 2px solid $warning-color;
+  .fas{
+    color: $warning-color
+  }
+}
+.content{
+  margin-top: 40%;
+  color: #ffffff;
+}
+.text-label{
+  font-size: 1.5rem;
+}
+.text-content{
+  font-size: 18px;
 }
