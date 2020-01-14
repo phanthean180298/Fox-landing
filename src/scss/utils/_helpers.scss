@@ -7,7 +7,11 @@
   top: 50%;
   left: 50%;
 }
-.flex-container {
-  display: flex;
-  flex-direction: row;
+.container{
+  padding: 0 80px;
+  width: calc(100% - 160px);
+  display: inline-block;
+}
+.clearfix {
+overflow: auto;
 }
