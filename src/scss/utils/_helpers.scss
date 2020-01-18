@@ -4,18 +4,40 @@
   text-align: center;
 }
 .container {
-  display: flex;
-  margin: 0 150px;
+  max-width: 1140px;
+  margin: auto;
 }
-.primary-button {
+.flex {
+  display: flex;
+}
+.flex-direction-row {
+  flex-direction: row;
+}
+.flex-direction-column {
+  flex-direction: column;
+}
+.align-item-centering {
+  align-items: center;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.btn--primary {
   background-color: #ffffff;
   color: $primary-color;
+  &:hover {
+    background-color: $warning-color;
+    color: #ffffff;
+  }
+}
+.btn {
   border-radius: 50px;
   padding: 15px 30px;
   border: none;
   &:hover {
-    background-color: rgb(242, 206, 95);
-    color: #ffffff;
     transition: 0.5s;
   }
+  cursor: pointer;
 }

@@ -1,0 +1,32 @@
+.phone {
+  padding: 60px;
+  background-image: url("~images/gray-bg.jpg");
+  &__image {
+    margin-left: 200px;
+  }
+  &__text {
+    color: #000000;
+    padding-left: 60px;
+    &__heading {
+      font-size: 40px;
+      font-weight: bold;
+      padding-top: 30px;
+    }
+    &__summary {
+      padding-bottom: 50px;
+    }
+    &__content {
+      flex-wrap: wrap;
+      &__child {
+        width: 50%;
+        padding-right: 0 20px;
+        box-sizing: border-box;
+        padding-bottom: 30px;
+      }
+    }
+  }
+  .fas {
+    color: $primary-color;
+    font-size: 40px;
+  }
+}
