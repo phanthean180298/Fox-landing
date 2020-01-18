@@ -1,0 +1,43 @@
+@import "./utils/_variables";
+
+.text-center {
+  text-align: center;
+}
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+.flex {
+  display: flex;
+}
+.flex-direction-row {
+  flex-direction: row;
+}
+.flex-direction-column {
+  flex-direction: column;
+}
+.align-item-centering {
+  align-items: center;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.btn--primary {
+  background-color: #ffffff;
+  color: $primary-color;
+  &:hover {
+    background-color: $warning-color;
+    color: #ffffff;
+  }
+}
+.btn {
+  border-radius: 50px;
+  padding: 15px 30px;
+  border: none;
+  &:hover {
+    transition: 0.5s;
+  }
+  cursor: pointer;
+}

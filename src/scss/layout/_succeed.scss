@@ -1,0 +1,28 @@
+@import "./utils/_variables";
+
+.succeed {
+  background-color: $primary-color;
+  position: relative;
+  overflow-x: hidden;
+  &_text {
+    padding-top: 200px;
+    color: #ffffff;
+  }
+  .title {
+    font-size: 80px;
+    margin: 0;
+  }
+  &::after {
+    width: 0;
+    height: 0;
+    border-bottom: 200px solid #ffffff;
+    border-left: 100vw solid $primary-color;
+    content: "";
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+  }
+  &_phone {
+    z-index: 2;
+  }
+}

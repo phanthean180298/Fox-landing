@@ -1,0 +1,50 @@
+@import "./utils/_variables";
+
+.options {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  &__child {
+    background-color: $primary-color;
+    padding: 40px;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    border-bottom: 4px solid transparent;
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+    &:hover {
+      .fas {
+        color: $warning-color;
+      }
+      border-bottom: 4px solid $warning-color;
+    }
+    &__icon-wrapper {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      background-color: #ffffff;
+      color: $primary-color;
+      position: relative;
+      font-size: 50px;
+    }
+  }
+  .fas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .heading {
+    font-size: 25px;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  .content {
+    font-size: 20px;
+    margin: 5px 0;
+  }
+}
